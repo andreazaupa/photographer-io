@@ -32,7 +32,8 @@ IntercomRails.config do |config|
   # user object, or a Proc which will be passed the current user.
   #
   config.user.custom_data = {
-    number_of_photographs: -> (current_user) { current_user.photographs_count }
+    number_of_photographs: -> (current_user) { current_user.photographs_count },
+    number_of_recommendations: -> (current_user) { current_user.recommendations_count }
   }
 
   # == User -> Company association
