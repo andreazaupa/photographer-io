@@ -17,7 +17,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: iso_development
+  database: photographerio_development
   pool: 50
   username: robertmay
   password: password
